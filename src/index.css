@@ -25,10 +25,9 @@ body {
 }
 
 .center-div {
-  width: 80vw;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .left-side,
@@ -52,6 +51,22 @@ body {
 
 a {
   color: red;
+}
+
+p {
+  position: relative;
+  bottom: 8rem;
+  left: 10rem;
+  font-size: 4rem;
+}
+
+.btn {
+  color: white;
+  margin-right: 7rem;
+}
+
+.btn:hover {
+  color: aqua;
 }
 
 @media (max-width: 768px) {

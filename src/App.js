@@ -1,11 +1,12 @@
 import React from "react";
-import Markdown from "./components/Markdown";
-
+import Temp from './components/weather/Temp'
+// import Increment from "./components/Increment"
 
 const App = () => {
   return (
     <>
-      <Markdown/>
+        {/* <Increment /> */}
+        <Temp/>
     </>
   );
 }
