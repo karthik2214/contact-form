@@ -1,12 +1,12 @@
 import React from "react";
-import Temp from './components/weather/Temp'
-// import Increment from "./components/Increment"
+import Contact from "./components/Contact";
+import './index.css'
+import './animate.css'
 
 const App = () => {
   return (
     <>
-        {/* <Increment /> */}
-        <Temp/>
+        <Contact/>
     </>
   );
 }
