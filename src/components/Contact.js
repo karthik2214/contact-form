@@ -79,7 +79,7 @@ const Contact = () => {
       </div>
       <div className="message">
         <textarea placeholder="Write your message" name="message" value={user.message} onChange={getUserData} ></textarea>
-        <i className="material-icons"></i>
+        <i className="far fa-comment-dots"></i>
       </div>
       <div className="button-area">
         <button type="submit" onClick={postData}>Submit</button>
