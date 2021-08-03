@@ -28,7 +28,7 @@ const Contact = () => {
 
         if (name && email && phone && message) {
             
-        const res = await fetch("https://contact-form-c94b6-default-rtdb.firebaseio.com/contact-form.json",
+        const res = await fetch(process.env.REACT_APP_API_KEY,
         {
             method: "POST",
             headers: {
@@ -79,7 +79,7 @@ const Contact = () => {
       </div>
       <div className="message">
         <textarea placeholder="Write your message" name="message" value={user.message} onChange={getUserData} ></textarea>
-        <i className="material-icons"></i>
+        <i className="far fa-comment-dots"></i>
       </div>
       <div className="button-area">
         <button type="submit" onClick={postData}>Submit</button>
